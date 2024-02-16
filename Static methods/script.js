@@ -9,23 +9,25 @@ class Rectangle{
         return this.height * this.width; 
     }
 
-    perimeter(){
-        return 2 * this.width + this.height;
+    static getClass(){
+        return "Rectangle";
     }
 
-    isSquare(){
-        return this.width === this.height;
-    }
+    // perimeter(){
+    //     return 2 * this.width + this.height;
+    // }
 
-    logArea(){
-        console.log('Rectangle area: ' + this.area());
-    }
+    // isSquare(){
+    //     return this.width === this.height;
+    // }
+
+    // logArea(){
+    //     console.log('Rectangle area: ' + this.area());
+    // }
 }
 
 const square = new Rectangle('Square', 20 , 20);
 console.log(square.area());
-console.log(square.perimeter());
-console.log(square.isSquare());
-square.logArea();
+console.log(Rectangle.getClass());
 
 //console.log(Object.getPrototypeOf(square));
