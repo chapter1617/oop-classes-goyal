@@ -39,7 +39,7 @@ Person.prototype.capitalizeFirst = function (value) {
 
 const PersonObj = { 
     _firstName: 'jane',
-    _lastName: 'doe',
+     lastName: 'doe',
 
      get firstName() {
         return Person.prototype.capitalizeFirst(this._firstName)
